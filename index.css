@@ -1,379 +1,383 @@
-
 @font-face {
-    font-family: SegoeUI;
-    src: url(./fonts/Segoe\ UI.ttf);
+  font-family: SegoeUI;
+  src: url(./fonts/Segoe\ UI.ttf);
 }
 
 @font-face {
-    font-family: SegoeUIBold;
-    src: url(./fonts/Segoe\ UI\ Bold.ttf);
+  font-family: SegoeUIBold;
+  src: url(./fonts/Segoe\ UI\ Bold.ttf);
 }
 
 body {
-   background: url(./img/background.png) center no-repeat;
-   background-size: cover;
-   overflow: hidden;
+  background: url(./img/background.png) center no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
 
 .text {
-    background: url(./img/text3.png) left no-repeat;
-    height: 800px;
-    background-size: contain;
-    max-width: 35%;
-    margin-left: 11%;
-    background-position: 0% 35%;
+  background: url(./img/text3.png) left no-repeat;
+  height: 800px;
+  background-size: contain;
+  max-width: 35%;
+  margin-left: 11%;
+  background-position: 0% 35%;
 }
 
-html, 
+html,
 body {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    overflow-x: hidden ;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 img {
-    left: 0;
-    width: 100%;
-    position: absolute;
-    top: 18px;
-    right: -230px;
+  left: 0;
+  width: 100%;
+  position: absolute;
+  top: 18px;
+  right: -230px;
 }
 
 #the-wrapper {
-    margin: 5px auto 0;
-    position: absolute;
-    width: 500px;
-    float: right;
-    display: table;
-    transform: translate(-50%, -50%);
-    left: 65%;
-    top: 50%;
+  margin: 5px auto 0;
+  position: absolute;
+  width: 500px;
+  float: right;
+  display: table;
+  transform: translate(-50%, -50%);
+  left: 65%;
+  top: 50%;
 }
 
 .wheenlights {
-    position: absolute;
-    left: 4px;
-    top: 4px;
-    width: 94%;
-    height: 94%;
-    content: '';
-    z-index: 999;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  width: 94%;
+  height: 94%;
+  content: "";
+  z-index: 999;
 }
 
 #spin {
-    z-index: 1000;
+  z-index: 1000;
 }
 
 .the_wheel {
-    background-color: #37083C;
-    padding: 10px;
-    border-radius: 50%;
-    display: table;
-    position: relative;
-    -webkit-box-shadow: -4px 4px 150px 5px #CC40FB;
-    -moz-box-shadow: -4px 4px 150px 5px #CC40FB;
-    box-shadow: -4px 4px 150px 5px #CC40FB;
+  background-color: #37083c;
+  padding: 10px;
+  border-radius: 50%;
+  display: table;
+  position: relative;
+  -webkit-box-shadow: -4px 4px 150px 5px #cc40fb;
+  -moz-box-shadow: -4px 4px 150px 5px #cc40fb;
+  box-shadow: -4px 4px 150px 5px #cc40fb;
 }
 
 .wheel__button-holder {
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 4;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    margin: auto;
-    width: 180px;
-    height: 190px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 4;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: auto;
+  width: 180px;
+  height: 190px;
 }
 
 .wheel__button-pointer {
-    width: 95%;
-    height: 95%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 5;
-    -webkit-tap-highlight-color: transparent;
+  width: 95%;
+  height: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 5;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .wheel__button-pointer:after {
-    position: absolute;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  display: block;
+  top: 17px;
+  left: 9px;
+  margin: auto;
+  bottom: 0;
+  background: url(./img/pointer.png) 4px 20px no-repeat;
+  z-index: 2;
+  background-size: contain;
+}
+
+.wheel__button {
+  position: relative;
+  z-index: 5;
+}
+
+.circle-button {
+  display: block;
+  width: 125px;
+  height: 125px;
+  line-height: 132px;
+  padding: 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "KelsonSans-BoldRU", "Helvetica Neue LT Cyrillic Condensed",
+    "Arial Narrow", sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  background: url(./img/btns.png) -3px -9px no-repeat;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.elements {
+  position: absolute;
+  width: 70%;
+  height: 94%;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 53%;
+}
+
+.form {
+  padding: 10px 27px 27px;
+}
+
+.form-wrapper {
+  width: 45%;
+  max-width: 500px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 65%;
+  background: transparent
+    linear-gradient(180deg, #610368 0%, #420446 100%, #310234 100%) 0% 0%
+    no-repeat padding-box;
+  box-shadow: 1px 1px 10px #cc40fb;
+  border: 5px solid #fe06fd;
+  border-radius: 20px;
+  padding-bottom: 12px;
+}
+
+.form-wrapper .congrats {
+  text-align: center;
+  font-family: SegoeUI;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: 0px;
+  color: #89f7f7;
+  height: 141px;
+  padding: 20px 69px 0px;
+  box-sizing: border-box;
+}
+
+.form-wrapper .congrats p {
+  margin: 0;
+}
+
+.coins {
+  height: 160px;
+  background-size: 255px !important;
+  background: url(./img/pocker.png) 50% 63% no-repeat;
+}
+
+.form-wrapper .free-spins {
+  text-align: center;
+  font-family: SegoeUI;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 15px;
+  height: 67px;
+  font: SegoeUI;
+  font-weight: bold;
+  font-size: 40px;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+}
+
+.form-wrapper .email {
+  width: 100%;
+  height: 55px;
+  background: #ffffff;
+  border: 1px solid #7070704f;
+  border-radius: 20px;
+  opacity: 1;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 12px;
+}
+
+.form-wrapper .email:focus,
+.form-wrapper button:focus {
+  outline: none;
+}
+
+.form-wrapper button {
+  width: 100%;
+  height: 60px;
+  background: white;
+  border-radius: 20px;
+  opacity: 1;
+  margin-bottom: 15px;
+  font-family: SegoeUIBold;
+  color: #ae009d;
+  box-sizing: border-box;
+  font-size: 38px;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 0;
+}
+
+.form-wrapper .terms {
+  text-align: left;
+  letter-spacing: 0px;
+  opacity: 1;
+  display: block;
+  font-family: SegoeUI;
+  color: #d6d6d6;
+  width: 92%;
+  float: right;
+  font-size: 13px;
+}
+
+.rights {
+  bottom: 0;
+  color: white;
+  text-align: center;
+  position: fixed;
+  transform: translate(-50%);
+  left: 50%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.rights a {
+  color: white;
+  font: normal normal normal 16px/18px Roboto;
+}
+
+.error {
+  color: red;
+  margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 855px) {
+  #the-wrapper {
+    min-height: 505px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .text {
+    height: 730px;
+    max-width: 40%;
+  }
+  #the-wrapper {
+    transform: translate(-50%, -50%);
+    left: 50%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+
+  .form-wrapper {
+    width: 55%;
+    left: 50%;
+    top: 45%;
+  }
+
+  .congrats {
+    padding: 15px 25px 0 !important;
+    height: 100px !important;
+  }
+
+  .congrats p {
+    text-align: center;
+    font-size: 28px;
+  }
+
+  .form-wrapper .free-spins {
+    font-size: 24px;
+  }
+
+  .form-wrapper .title {
+    font-size: 40px;
+    line-height: 37px;
+    padding: 15px 0;
+  }
+
+  .coins {
+    height: 100px;
+    background-size: 170px !important;
+  }
+
+  .terms {
+    font-size: 12px;
+    line-height: 11px;
+    width: 88%;
+  }
+
+  .form-wrapper button {
+    height: 60px;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .text {
+    height: 778px;
+    max-width: 50%;
+  }
+  #the-wrapper {
     width: 100%;
-    height: 100%;
-    content: '';
+  }
+
+  .form-wrapper {
+    width: 90%;
+  }
+
+  canvas {
+    width: 100%;
+  }
+
+  .circle-button {
+    left: -2px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    top: 7px;
+    background: url(./img/btns.png) center no-repeat;
+    line-height: 0;
+    font-size: 18px;
+  }
+
+  .wheel__button-pointer:after {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    content: "";
     display: block;
-    top: 17px;
-    left: 9px;
+    top: 2px;
+    left: 44px;
+    font-variant: JIS04;
     margin: auto;
     bottom: 0;
     background: url(./img/pointer.png) 4px 20px no-repeat;
     z-index: 2;
     background-size: contain;
-}
-
-.wheel__button {
-    position: relative;
-    z-index: 5;
-}
-
-.circle-button {
-    display: block;
-    width: 125px;
-    height: 125px;
-    line-height: 132px;
-    padding: 0;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-family: 'KelsonSans-BoldRU', "Helvetica Neue LT Cyrillic Condensed", "Arial Narrow", sans-serif;
-    font-size: 21px;
-    font-weight: bold;
-    color: #fff;
-    text-transform: uppercase;
-    background: url(./img/btns.png) -3px -9px no-repeat;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.elements {
-    position: absolute;
-    width: 70%;
-    height: 94%;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 53%;
-}
-
-.form {
-    padding: 10px 27px 27px ;
-}
-
-.form-wrapper {
-    width: 45%;
-    max-width: 500px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 65%;
-    background: transparent linear-gradient(180deg, #610368 0%, #420446 100%, #310234 100%) 0% 0% no-repeat padding-box;
-    box-shadow: 1px 1px 10px #CC40FB;
-    border: 5px solid #FE06FD;
-    border-radius: 20px;
-    padding-bottom: 12px;
-}
-
-.form-wrapper .congrats { 
-    text-align: center;
-    font-family: SegoeUI;
-    font-weight: bold;
-    font-size: 40px;
-    letter-spacing: 0px;
-    color: #89F7F7;
-    height: 141px;
-    padding: 20px 69px 0px;
-    box-sizing: border-box;
-}
-
-.form-wrapper .congrats p {
-    margin: 0;
-} 
-
-.coins {
-    height: 160px;
-    background-size: 255px !important;
-    background: url(./img/pocker.png) 50% 63% no-repeat;
-}
-
-.form-wrapper .free-spins {
-    text-align: center;
-    font-family: SegoeUI;
-    font-weight: bold;
-    margin-bottom: 0;
-    margin-top: 15px;
-    height: 67px;
-    font: SegoeUI;
-    font-weight: bold;
-    font-size: 40px;
-    letter-spacing: -0.5px;
-    color: #FFFFFF;
-}
-
-.form-wrapper .email {
-    width: 100%;
-    height: 55px;
-    background: #FFFFFF;
-    border: 1px solid #7070704F;
-    border-radius: 20px;
-    opacity: 1;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    padding: 12px;
-}
-
-.form-wrapper .email:focus,
-.form-wrapper button:focus {
-    outline: none;
-}
-
-.form-wrapper button {
-    width: 100%;
-    height: 60px;
-    background: white;
-    border-radius: 20px;
-    opacity: 1;
-    margin-bottom: 15px;
-    font-family: SegoeUIBold;
-    color: #AE009D;
-    box-sizing: border-box;
-    font-size: 38px;
-    font-weight: 900;
-    text-transform: uppercase;
-    border: 0
-}
-
-.form-wrapper .terms {
-    text-align: left;
-    letter-spacing: 0px;
-    opacity: 1;
-    display: block;
-    font-family: SegoeUI;
-    color: #D6D6D6;
-    width: 92%;
-    float: right;
-    font-size: 13px;
-}
-
-
-.rights {
-    bottom: 0;
-    color: white;
-    text-align: center;
-    position: fixed;
-    transform: translate(-50%);
-    left: 50%;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.rights a {
-    color: white;
-    font: normal normal normal 16px/18px Roboto;
-}
-
-.error {
-    color: red;
-    margin-bottom: 5px;
-}
-
-@media only screen and (min-width: 855px) { 
-    #the-wrapper {
-        min-height: 505px;
-    }
-}
-
-
-@media only screen and (max-width: 850px) { 
-    img, .text {
-        display: none;
-    }
-
-    #the-wrapper {
-        transform: translate(-50%, -50%);
-        left: 50%;
-        padding: 0 15px;
-        box-sizing: border-box;
-    }
-
-    .form-wrapper {
-        width: 55%;
-        left: 50%;
-        top: 45%;
-    }
-
-    .congrats {
-        padding: 15px 25px 0 !important;
-        height: 100px !important;
-    } 
-
-    .congrats p {
-        text-align: center;
-        font-size: 28px;
-    }
-
-    .form-wrapper .free-spins {
-        font-size: 24px;
-    }
-
-    .form-wrapper .title {
-        font-size: 40px;
-        line-height: 37px;
-        padding: 15px 0;
-    }
-
-   .coins {
-    height: 100px;
-    background-size: 170px !important;
-   }
-
-   .terms {
-    font-size: 12px;
-    line-height: 11px;
-    width: 88%;
-   }
-
-   .form-wrapper button {
-        height: 60px;
-        font-size: 28px;
-        margin-bottom: 10px;
-    }   
-}
-
-@media only screen and (max-width: 425px) { 
-    #the-wrapper {
-        width: 100%;
-    }
-
-    .form-wrapper {
-        width: 90%;
-    }
-
-    canvas {
-        width: 100%;
-    }
-
-    .circle-button {
-        left: -2px;
-        width: 55px;
-        height: 55px;
-        border-radius: 50%;
-        top: 7px;
-        background: url(./img/btns.png)center no-repeat;
-        line-height: 0;
-        font-size: 18px;
-    }
-
-    .wheel__button-pointer:after {
-        position: absolute;
-        width: 50%;
-        height: 50%;
-        content: '';
-        display: block;
-        top: 2px;
-        left: 44px;
-        FONT-VARIANT: JIS04;
-        margin: auto;
-        bottom: 0;
-        background: url(./img/pointer.png) 4px 20px no-repeat;
-        z-index: 2;
-        background-size: contain;
-    }
+  }
 }
