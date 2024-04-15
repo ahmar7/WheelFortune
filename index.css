@@ -339,7 +339,7 @@ img {
 
 @media only screen and (max-width: 425px) {
   .text {
-    height: 778px;
+    height: 700px;
     max-width: 50%;
   }
   #the-wrapper {
