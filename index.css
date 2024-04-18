@@ -282,6 +282,40 @@ img {
 }
 
 @media only screen and (max-width: 850px) {
+  .circle-button {
+    left: 9px;
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+    top: 0px;
+    background: url(./img/btns.png) center no-repeat;
+    line-height: 0;
+    font-size: 18px;
+  }
+  .wheel__button-pointer {
+    width: 65%;
+    height: 67%;
+  }
+  .wheel__button-pointer:after {
+    top: 1px;
+    left: 12px;
+  }
+
+  #spinwheel {
+    width: 300px;
+  }
+  #wheel-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .wheel__button-holder {
+    width: 152px;
+    height: 173px;
+  }
+  .wheenlights {
+    width: 74%;
+    height: 74%;
+  }
   .text {
     height: 130px;
     max-width: 40%;
@@ -367,12 +401,12 @@ img {
 
   .wheel__button-pointer:after {
     position: absolute;
-    width: 50%;
-    height: 50%;
+    width: 82%;
+    height: 66%;
     content: "";
     display: block;
-    top: 2px;
-    left: 44px;
+    top: -7px;
+    left: 8px;
     font-variant: JIS04;
     margin: auto;
     bottom: 0;
